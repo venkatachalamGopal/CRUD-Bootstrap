@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import { Routes,Route } from 'react-router-dom';
+import AddUsers from './addusers';
+import Edituser from './Edituser'
+
+import {TableExample} from './Table'
+
+
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-fluid'>
+      <Routes>
+       <Route path='/' element={<TableExample/>}/>
+      <Route path='/add-user' element={<AddUsers/>}/>
+      <Route path='/edit-user/:id' element={<Edituser/>}/>
+      </Routes>
     </div>
   );
 }

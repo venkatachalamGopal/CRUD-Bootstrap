@@ -1,0 +1,31 @@
+[
+    {   "id":"1",
+        "name":"Arjun",
+        "age":"25",
+        "state":"chennai"
+    },
+    {  
+         "id":"2",
+        "name":"Bala",
+        "age":"26",
+        "state":"Mumbai"
+    },
+    {
+        "id":"3",
+        "name":"Chandran",
+        "age":"27",
+        "state":"Bangalore"
+    },
+    {
+        "id":"4",
+        "name":"Daniel",
+        "age":"28",
+        "state":"Kolkata"
+    },
+    {
+        "id":"5",
+        "name":"Elango",
+        "age":"29",
+        "state":"Gujarat"
+    }
+]
